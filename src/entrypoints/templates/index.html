@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stores</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Our stores</h1>
+        <ul class="stores">
+            {% for store in stores %}
+            <li class="store-item">
+                <p class="store-name">{{store.name}}</p>
+                <p>{{store.postcode}}</p>
+                {% if store.lat %}
+                    <p class="coords">Lat: {{store.lat}} Long:{{store.long}}</p>
+                {% else %}
+                    <p class="coords">Coordinates are not available for this store.</p>
+                {% endif %}
+                
+                <hr/>
+            </li>
+            {% endfor %}
+        </ul>
+        <script src="" async defer></script>
+    </body>
+</html>
