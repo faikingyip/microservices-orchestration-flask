@@ -46,7 +46,7 @@ docker compose up
 5) Navigate to http://127.0.0.1:5000 to view the list of stores. For testing purposes, you can also navigate to http://127.0.0.1:5000/nearby/ to see the list of nearby stores within a 30km radius of the postcode "CM20 1FE".
 
 
-## SUMMARY
+## Summary
 
 * Using well known design patterns is a good approach because they are universally understood. This means less documentation and ultimately leads to code that is more maintainable.
 
